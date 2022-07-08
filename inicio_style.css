@@ -8,231 +8,61 @@ body{
     width: 100%;
 }
 
-
-/* grid */
-
-
-
-.borde{
-    background-color: rgba(255, 255, 255);
+footer,
+.navbar{
+    background-color: #191919;
 }
 
-.menu_general{
-    grid-column: span 2;
- 
+button.btn{
+    color: white;
+    border-color: white;
+}
+button.btn:hover{
+    background-color: #DDC5BC;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-nav{
-    grid-area: nav;
+a.botoncard{
+   background-color:#DDC5BC;
+   border: 1.5px solid #C08B89;
+   transition: all 1s;
 
 }
-
-.aside{
-    grid-area: aside;
-    
-}
-.contenedor_seccion{
-    grid-area: contenedor_seccion;
-
+a.botoncard:hover{
+    background-color: #C08B89;
+    border: 1.5px solid #DDC5BC;
 }
 
-article{
-    grid-area: carrusel;
+section.productos{
+    margin-top: 100px;
 }
-
-div #contenido{
-    grid-area: contenido;
-}
-
-.contenedor_cards{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(6,auto);
-    grid-gap: 40px;
-}
-
-
-section #menu_general{
-    grid-area: menu_general;
-}
-
-section #video_presentacion{
-    grid-area: video_presentacion;
+.card{
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 footer{
-    grid-area: footer;
-}
-
-
-/* estilos */
-
-header{
-    grid-area: header;
-    font-size: 10px;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    justify-content: center;
     
 }
 
-nav{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-ul{
-    display: flex;
-    justify-content: space-around;
-    font-size: 14px;
-}
-
-ul ul{
-    position: absolute;
-    display: none;
-    background-color: white;
-    padding: 8px;
-}
-
-li{
-    list-style: none;
-    position: relative;
-    margin-top: 12px;
-}
-li a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-
-}
-
-ul ul li {
-    display: block;
-}
-
-ul li:hover ul {
-    display: block;
-}
-
-.header_logos{
-    display: flex;
-    align-items: center;
-}
-
-.img_usuario,
-.img_carrito{
-    margin-right: 10px;
-}
-
-#menu_general{
-    margin-bottom: 40px;
-}
-
-.titulo_secciones{
-    display: flex;
-    justify-content: center;
-    padding-top: 80px;
-    margin-bottom: 30px;
-}
-
-.contenedor_cards{
-    display: flex;
-    flex-direction: column;
- }
- 
-.nuevos_ingresos_seccion,
-.importadas_seccion,
-.bandoleras_seccion{
-    margin-top: 30px;
-}
-.secciones_vistarapida{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #F3EEEA;
-}
-
-.logos {
-    height: 30px;
-}
-
-.card{
-    margin: auto;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
+.bi{
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #AA7C7A;
-   }
-
-.aside{
-    border-radius: 16px;
-    background-color: #CCC2C0;
-}
-.img_aside{
-    margin-top: 50px;
-}
-#presentacion_dulceida,
-.videopresentacion{
-    display: flex;
-    justify-content: center;
-    margin: auto;
 }
 
-.contenedor_video{
-    margin-top: 20px;
-    padding: 40px;
-    background-color: #CCC2C0;
-    border-radius: 20px;
-}
-
-.pie{
-    background-color: rgb(126, 125, 126);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
+.bi:hover{
+    color: #949494;
 }
 
 
-@media screen and (min-width: 320px) {
-    #grilla{
-        display: grid;
-        grid-template-columns: auto;
-        grid-gap: 2px;
-        grid-template-rows: repeat(6,auto);
-        grid-template-areas: "header" "nav"  "carrusel" "contenedor_seccion" "contenedor_seccion " "footer";
-    }
-    aside{
-        display: none;
-    }
 
-    article{
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    #grilla{
-        display: grid;
-        grid-template-columns: 25% 25% 25% auto;
-        grid-gap: 2px;
-        grid-template-rows: repeat(6,auto);
-        grid-template-areas: "header header header header" "nav nav nav nav"  "carrusel carrusel carrusel carrusel" "contenedor_seccion contenedor_seccion contenedor_seccion aside" "contenedor_seccion contenedor_seccion contenedor_seccion aside" "footer footer footer footer";
-    }
-    aside{
-        display: block;
-    }
-    article{
-        display: block;
-    }
-}
 
